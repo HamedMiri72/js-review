@@ -351,3 +351,27 @@ let result = playerOne === computer ? "Tie Game"
 console.log(result);
 
 
+
+//chapter 9 User input
+
+// alert("Hello world");
+
+
+// let myBoolean = confirm("Ok === True\n Cancel === False");
+
+// console.log(myBoolean);
+
+let name1 = prompt("please enter your name?");
+// console.log(typeof name1);
+
+if(name1) {
+    // console.log(name1 ?? "You didnt enter your name");
+    console.log(name1);
+} else{
+    console.log("you didnt enter your name!");
+}
+
+
+
+
+
