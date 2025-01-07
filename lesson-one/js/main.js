@@ -159,3 +159,80 @@ console.log(myName.charAt(Math.floor(Math.random() * myName.length)));
 
 
 
+
+//IF STATMENT
+
+// if (condition) {
+//     //run some code
+// } else {
+//     //run some other codes
+// }
+
+
+// let soup = "chicken noodel soup";
+
+// let reply;
+
+// let customerIsBanned =false;
+
+// let crackers = true;
+
+// if(customerIsBanned){
+//     reply = "no soup for you";
+// } else if(soup && crackers){
+//     reply = `hers your order of ${soup} and crackers`;
+// }else if (soup) {
+//     reply = `her's your ${soup}`;
+// }
+// else {
+//     reply = `sorry, we r out of ${soup}`;
+// }
+
+// console.log(reply);
+
+
+
+let testScore = 59;
+let grade;
+let collegeStudent = true;
+
+if (testScore >= 90) {
+    grade = "A";
+} else if (testScore >= 80) {
+    grade ="B";
+}else if (testScore >= 70) {
+    grade = "C";
+}else {
+
+    if (collegeStudent) {
+        grade = "U"
+    } else {
+        grade = "F";
+    }
+
+}
+console.log(grade);
+
+
+
+if (playerOne === computer) {
+    //tie game!
+} else if (playerOne === "rock"){
+    if(computer === "paper"){
+        //computer wins
+    }else{
+        //playerOne wins
+    }
+} else if(playerOne === "paper"){
+    if (computer === "scisear"){
+        //computer wins
+    } else {
+        //player one wins
+    }
+} else {
+    if (computer === "rock"){
+        //computer wins
+    }else {
+        //player one wins
+    }
+}
