@@ -215,24 +215,87 @@ console.log(grade);
 
 
 
-if (playerOne === computer) {
-    //tie game!
-} else if (playerOne === "rock"){
-    if(computer === "paper"){
-        //computer wins
-    }else{
-        //playerOne wins
-    }
-} else if(playerOne === "paper"){
-    if (computer === "scisear"){
-        //computer wins
-    } else {
-        //player one wins
-    }
-} else {
-    if (computer === "rock"){
-        //computer wins
-    }else {
-        //player one wins
-    }
+// if (playerOne === computer) {
+//     //tie game!
+// } else if (playerOne === "rock"){
+//     if(computer === "paper"){
+//         //computer wins
+//     }else{
+//         //playerOne wins
+//     }
+// } else if(playerOne === "paper"){
+//     if (computer === "scisear"){
+//         //computer wins
+//     } else {
+//         //player one wins
+//     }
+// } else {
+//     if (computer === "rock"){
+//         //computer wins
+//     }else {
+//         //player one wins
+//     }
+// }
+
+
+//conditional statment chapter 8
+
+
+//syntax
+
+// switch (expression OR value){
+//     case choice1:
+//         //run this code
+//         break;
+//     case choise2:
+//         // run this code
+//         break;
+
+//     //add as many cases as needed
+
+//     defaut:
+//     //run this code if no case matches 
+//     // no need for a breack here
+// }
+
+switch(Math.floor(Math.random() * 3 + 1)){
+    case 1:
+        console.log(1);
+        break;
+    case 2:
+        console.log(2);
+        break;
+    case 3:
+        console.log(3);
+    default:
+        console.log("Na match");
+}
+
+let player = "scisers";
+let computer = "rock";
+
+switch (player) {
+    case computer:
+        console.log("Tie game!");
+        break;
+    case "rock":
+        if (computer === "paper"){
+            console.log("Computer wins!");
+        } else {
+            console.log("player wins!");
+        }
+        break;
+    case "paper":
+        if (computer === "scisers"){
+            console.log("Computer wins!");
+        }else {
+            console.log("player wins!");
+        }
+        break;
+    default:
+        if (computer === "rock"){
+            console.log("computer wins!");
+        } else{
+            console.log("player wins!");
+        }
 }
