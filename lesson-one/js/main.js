@@ -275,9 +275,12 @@ let player = "scisers";
 let computer = "rock";
 
 switch (player) {
+
+
     case computer:
         console.log("Tie game!");
         break;
+
     case "rock":
         if (computer === "paper"){
             console.log("Computer wins!");
@@ -285,6 +288,7 @@ switch (player) {
             console.log("player wins!");
         }
         break;
+
     case "paper":
         if (computer === "scisers"){
             console.log("Computer wins!");
@@ -292,10 +296,58 @@ switch (player) {
             console.log("player wins!");
         }
         break;
+
     default:
         if (computer === "rock"){
             console.log("computer wins!");
         } else{
             console.log("player wins!");
         }
+
+
 }
+
+
+
+//conditional: Ternary Operator
+
+
+//syntax
+// conditional ? ifTrue : ifFalse;
+// let response = soup ? "Yes, we have soup." : "sorry , no soup today";
+// console.log(response);
+
+
+let soup;
+let isCoustomerBanned =true;
+let soupAccess = isCoustomerBanned 
+? "sorry no soup for you"
+: soup
+? `yes we have ${soup} today`
+:"sorry no soup today.";
+console.log(soupAccess);
+
+
+
+let testScore1 = 89;
+let myGrade = testScore1 >=89 
+? "A"
+: testScore1 > 79 ? "B"
+: testScore1 >60 ? "C"
+: testScore1 > 59 ? "D"
+: "F";
+
+console.log(`My test grade is a ${myGrade}.`);
+
+
+let playerOne = "rock";
+let computerOne = "rock";
+let result = playerOne === computer ? "Tie Game"
+: playerOne === "rock" && computerOne === "paper" ? "Compurer Win"
+: playerOne === "paper" && computer === "scisers" ? "computer wins"
+: playerOne = "scisers" && computer === "rock" ? "computer wins"
+: "playerOne is winner";
+
+console.log(result);
+
+
