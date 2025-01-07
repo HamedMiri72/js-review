@@ -41,3 +41,73 @@ console.log(myVariable.split("e")); //("") will result in one array includes all
 console.log("Hame,Miri,72".split(","));
 
 console.log("every good boy does fine".split(" "));
+
+
+//chapter 4
+
+const myNumber = 42;
+
+console.log(myNumber);
+
+
+//A number with a decimal point is a float which refrenceses the floating point
+
+const myFloat = 42.01;
+console.log(myFloat);
+
+const myString = "42";
+console.log(myFloat === myString); //if my float and mystring has the same value but data type is diffrent so the camparisan will be false
+
+console.log(myString + 3);
+
+console.log(Number(myString) + 3);
+
+console.log(Number(myString) === myNumber);
+
+console.log(Number("hamed miri")); // not a number NAN
+
+console.log(Number(undefined)); //again is gonna be NAN
+
+console.log(Number(true));
+console.log(Number(false));
+
+
+//number methods
+//the number .isInteger() determines whether the passed value is an integer.
+console.log(Number.isInteger(myFloat));
+
+
+// Number.parseFloat parses an argument and returns a floating number.if can not be pars it will return nan
+console.log(Number.parseFloat(myString));
+
+
+const myString1 = "42.123abc"
+console.log(Number(myString1));
+console.log(Number.parseFloat(myString1));
+
+
+// toFixed method formats a number according to how many decimal points you provide as the parameter
+
+console.log(Number.parseFloat(myString1).toFixed(2));
+
+console.log(typeof myFloat.toFixed(2));  //it will return string data
+
+//Number.parseInt() method parse a string argument and returns an integer
+
+console.log(typeof Number.parseInt(myFloat));
+
+//toString method returns a string representing the number
+
+console.log(typeof myFloat.toString());
+
+console.log(typeof Number.parseFloat(myString));
+
+console.log(typeof Number.parseFloat(myString1).toFixed(2).toString());
+
+
+//NaN
+
+Number.isNaN();
+console.log(Number("Dave"));
+
+console.log(isNaN("hamed"));
