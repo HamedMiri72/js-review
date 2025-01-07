@@ -111,3 +111,51 @@ Number.isNaN();
 console.log(Number("Dave"));
 
 console.log(isNaN("hamed"));
+
+
+//Math methods and propertises
+
+console.log(Math.PI);
+console.log(Math.trunc(Math.PI));
+console.log(Math.round(3.5));
+
+console.log(Math.ceil(Math.PI)); //rounf=d to upper number
+
+console.log(Math.floor(5.8)); // with floor is gonna be always rounded down no matter its is more than half portion
+
+console.log(Math.pow(2, 6));
+
+console.log(Math.min(2, 0.5 , 9));
+
+console.log(Math.max(2, 4, 7));
+
+console.log(Math.random()); // the result is always between 0 and 1
+
+//from one to ten 
+console.log(Math.floor(Math.random() * 10) + 1); // we should memorize this its gonna help for generating a random number
+
+
+
+// FIRST CHALLANGE
+
+//write the code that will return a random letter from your name
+
+const myName = "Hamed"
+
+console.log(typeof myName);
+
+
+console.log(myName.charAt());
+
+console.log(Math.floor(Math.random() * 5 + 1));
+
+console.log(myName.charAt(Math.floor(Math.random() * 5 )));
+console.log(myName.charAt(Math.floor(Math.random() * 5 )));
+
+
+//make this work for all the names
+
+console.log(myName.charAt(Math.floor(Math.random() * myName.length)));
+
+
+
