@@ -366,7 +366,9 @@ let name1 = prompt("please enter your name?");
 
 if(name1) {
     // console.log(name1 ?? "You didnt enter your name");
-    console.log(name1);
+    console.log(name1.length);
+    console.log(name1.trim().length);
+    console.log(name1.trim());
 } else{
     console.log("you didnt enter your name!");
 }
