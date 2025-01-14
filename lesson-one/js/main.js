@@ -401,14 +401,73 @@ for(let i = 0; i <= name.length; i++){
 }
 
 
-// let counter = 0;
-// let myLetter;
-// let name1 = "Hamed";
-// while(true){
 
-//     myLetter = name1[counter];
-//     console.log(myLetter);
-//     if(myLetter === "v") break;
-//     counter++;
+//functions
+
+
+//function decleration syntax
+
+// function sum(num1, num2) {
+//     // console.log(num1);
+//     // console.log(num2);
+
+//     if(num2 === undefined){
+//         return num1 + num1;
+//     }
+//     return num1 + num2;
+// }
+
+// console.log(sum(5 , 10));
+
+
+// function getUserNameFromEmail(email) {
+//     return email.slice(0, email.indexOf("@"))
+// }
+
+// console.log(getUserNameFromEmail("hamedmiri72@gmail"));
+
+
+// const getUserNameFromEmail = function (email) {
+
+//     return email.slice(0, email.indexOf("@"));
 
 // }
+
+// console.log(getUserNameFromEmail("hamedmiri72@gmail.com"));
+
+
+// const nameoffunction = () => {
+
+// }
+
+
+const toProperCase = (name) => {
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
+
+
+console.log(toProperCase("hamed"));
+
+//methos- build functions
+
+console.log("hamed".toUpperCase());
+Math.random();
+
+
+
+//var, let, and const
+
+
+//var = we can redefine it without error 
+//let we can not use let when we want to change the value of variable 
+let x = 2;
+x= 3;
+console.log(x);
+
+//we use let we know that we need to reassign a value
+
+//arrays
+
+const myArray = [];
+
+
