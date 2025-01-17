@@ -530,38 +530,50 @@ console.log(variable);
 // const name = "hamed";
 // name = "joe"
 
-const makeError = () =>{
-    let i =1;
-    while(i <= 5){
-        try{
-            throw new customeError("This is a custom error!");
-            throw new error("This is a custom error!");
-            const name4 = "hamed";
-            name4 = "miri";
+// const makeError = () =>{
+//     let i =1;
+//     while(i <= 5){
+//         try{
+//             throw new customeError("This is a custom error!");
+//             throw new error("This is a custom error!");
+//             const name4 = "hamed";
+//             name4 = "miri";
     
-        }catch(err){
-            console.error(err.name);
-            console.error(err.message);
-            console.error(err);
+//         }catch(err){
+//             console.error(err.name);
+//             console.error(err.message);
+//             console.error(err);
     
-        } finally{
-            console.log("...finally");
-            i++
-        }
-    }
+//         } finally{
+//             console.log("...finally");
+//             i++
+//         }
+//     }
    
+// }
+
+// makeError();
+
+
+// function customeError(message){
+//     this.message = message;
+//     this.name = "customError";
+//     this.stack = `${this.name} : ${this.message}`;
+// }
+
+
+//try catch finally
+
+try{
+    console.log("start of try runs");
+    hamed;
+    console.log("End of try runs: -- never reached");
+}catch(err){
+    console.log("error has occured" + err.stack);
+}finally{
+    console.log("this is always run");
 }
 
-makeError();
-
-
-function customeError(message){
-    this.message = message;
-    this.name = "customError";
-    this.stack = `${this.name} : ${this.message}`;
-}
-
-
-
+console.log("...then the execution continues!!");
 
 
