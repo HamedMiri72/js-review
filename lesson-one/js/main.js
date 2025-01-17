@@ -470,4 +470,98 @@ console.log(x);
 
 const myArray = [];
 
+//add element to an array
+myArray[0] = "hamed";
+myArray[1] = 100;
+myArray[2] = false;
+
+
+// //refer to an array
+// console.log(myArray);
+
+// //length property
+// console.log(myArray.length);
+
+// //last element in an array
+// console.log(myArray[myArray.length - 1]);
+
+// console.log(myArray[1]);
+
+myArray.push("school");
+
+
+console.log(myArray);
+
+//remove the last item
+myArray.pop();
+console.log(myArray);
+
+// const lastItem = myArray.pop();
+// console.log(lastItem);
+
+//add at the first
+myArray.unshift(42);
+console.log(myArray);
+
+//when we add th the first of the array the return value is the length of the array. we can also do that with push.
+
+
+//shift we are removing from the first of the array
+myArray.shift();
+console.log(myArray);
+
+
+//( , ) first position is the index of the item in the array and another one in counter
+myArray.splice(1, 1);
+
+//we can use splice to replace
+
+myArray.splice(1, 1, 42);
+console.log(myArray);
+
+//erro handeling
+
+"use strick";
+variable = "hamed";
+console.log(variable);
+
+// Object. .create();
+
+// const name = "hamed";
+// name = "joe"
+
+const makeError = () =>{
+    let i =1;
+    while(i <= 5){
+        try{
+            throw new customeError("This is a custom error!");
+            throw new error("This is a custom error!");
+            const name4 = "hamed";
+            name4 = "miri";
+    
+        }catch(err){
+            console.error(err.name);
+            console.error(err.message);
+            console.error(err);
+    
+        } finally{
+            console.log("...finally");
+            i++
+        }
+    }
+   
+}
+
+makeError();
+
+
+function customeError(message){
+    this.message = message;
+    this.name = "customError";
+    this.stack = `${this.name} : ${this.message}`;
+}
+
+
+
+
 
