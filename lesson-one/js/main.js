@@ -576,4 +576,18 @@ try{
 
 console.log("...then the execution continues!!");
 
+//custom error with throw statment
+
+let json ="{'age': 30}";
+
+try {
+    let user = JSON.parse(json);
+    if(!user.name){
+        throw new SyntaxError("incompleted data: no name")
+    }
+    console.log(user.name);
+}catch(e){
+    console.log("json error: " + e.message);
+}
+
 
